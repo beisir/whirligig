@@ -1,0 +1,49 @@
+@import url("reset.css");
+html,body{
+	background: #000;
+}
+.main{
+	width:800px;
+	height:338px;
+	position:relative;
+	margin:100px auto;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px #eee,5px 5px 5px #eee inset;
+
+}
+.main a,.main img{
+	display:block;
+}
+.uls{
+	width:800px;
+	height:338px;
+}
+.uls .lis{
+	position: absolute;
+	left: 0;top:0;
+	box-shadow: 5px 5px 5px #eee,5px 5px 5px #eee inset;
+}
+.lis a{
+	width:100%;
+}
+.lis img{
+	width:100%;
+	height: auto;
+}
+.main .posrt {
+	width: 100px;
+	height: 337px;
+	position:absolute;
+	top:0;
+	z-index: 10;
+	cursor: pointer;
+	opacity: 0.5;
+}
+.left{
+	left:0;
+	background:url("../img/l.png") no-repeat center center;
+}
+.right{
+	right:0;
+	background:url("../img/r.png") no-repeat center center;
+}

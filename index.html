@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>旋转木马</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="jposrt main" data-setting='{
+		"width":1000,
+		"height":400,
+		"posrtwidth":600,
+		"posrtheight":300,
+		"scale":0.9,
+		"align":"middle",
+		"speed":600,
+		"isplay":true,
+		"delay":1000
+}'>
+	<div class="posrt left"></div>
+		<ul class="uls">
+			<li class="lis"><a href="#"><img src="img/1.jpg"></a></li>
+			<li class="lis"><a href="#"><img src="img/2.jpg"></a></li>
+			<li class="lis"><a href="#"><img src="img/3.jpg"></a></li>
+			<li class="lis"><a href="#"><img src="img/4.jpg"></a></li>
+			<li class="lis"><a href="#"><img src="img/5.jpg"></a></li>
+			<li class="lis"><a href="#"><img src="img/1.jpg"></a></li>
+			<li class="lis"><a href="#"><img src="img/2.jpg"></a></li>
+			<li class="lis"><a href="#"><img src="img/3.jpg"></a></li>
+			<li class="lis"><a href="#"><img src="img/4.jpg"></a></li>
+		</ul>
+	<div class="posrt right"></div>
+</div>	
+<script src="js/jquery.js"></script>
+<script src="js/car.js"></script>
+<script>
+$(function(){//预先加载函数
+	Car.init($(".jposrt"));	// 在构造函数的init方法下实例构造函数;调用时使用构造函数的init方法调用
+})	
+</script>	
+</body>
+</html>
